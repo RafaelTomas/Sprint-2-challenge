@@ -36,14 +36,14 @@ router.delete('/:id', async (req, res) => {
   res.end()
 })
 
-router.get('/:id', async (req, res, next) => {
+router.get('/:id',  (req, res, next) => {
   try{
     const data = {
       id: req.params.id,
       note_id: req.Note.id
     }
     const task = new Task(data)
-    await task.load()
+    
     res.send(
       JSON.stringify(task)
     )

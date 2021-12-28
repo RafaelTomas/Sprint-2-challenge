@@ -29,7 +29,7 @@ router.get('/:idnotes', async (req, res, next) => {
   try {
     const id = req.params.idnotes
     const notation = new Notes({ id: id })
-    await notation.load()
+
     res.status(200)
 
     res.send(JSON.stringify(notation))
@@ -59,7 +59,7 @@ router.delete('/:idnotes', async (req, res, next) => {
   try {
     const id = req.params.idnotes
     const notes = new notes({ id: id })
-    await notes.load()
+  
     await notes.remove()
 
     res.status(204)
