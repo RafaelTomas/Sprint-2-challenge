@@ -18,6 +18,7 @@ class Task {
             note_id: this.note_id
 
         })
+        
         this.id = result.id
         this.createdAt = result.createdAt
         this.updatedAt = result.updatedAt

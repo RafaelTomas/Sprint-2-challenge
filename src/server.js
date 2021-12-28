@@ -1,6 +1,5 @@
 const express = require('express')
-require('./src/database')
-const router = require('./routes/router')
+const router = require('./routes/router/index_Note')
 const NotFound = require('./erro/NotFound')
 const invalidField = require('./erro/invalidfield')
 const dataNotProvided = require('./erro/dataNotProvided')
