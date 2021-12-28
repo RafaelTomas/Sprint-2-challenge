@@ -1,4 +1,4 @@
-const TableNotes = require("../models/tables/TableNotes")
+const TableNotes = require("./tableNotes")
 
 class Notes {
     constructor({id, title, description, createdAt, updatedAt, tasks}){
