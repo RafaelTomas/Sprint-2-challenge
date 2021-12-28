@@ -1,6 +1,5 @@
 const router = require('express').Router({ mergeParams: true })
 const table = require('../Task/tableTask')
-const router = require('../router/index_Task')
 const Task = require('./Task')
 
 router.get('/', async (req, res) => {

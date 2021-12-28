@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize')
-const instance = require('../database/index')
-const taskModel = require('./task')
+const instance = require('../../database/index')
+const taskModel = require('../Task/task')
 
 const columns = {
   id: {

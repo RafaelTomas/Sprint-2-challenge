@@ -1,5 +1,5 @@
-const model = require('../notes')
-const task = require('../task')
+const model = require('./notes')
+const task = require('../Task/task')
 const NotFound = require('../../erro/NotFound')
 
 module.exports = {
