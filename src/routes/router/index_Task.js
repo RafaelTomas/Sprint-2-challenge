@@ -1,6 +1,6 @@
 const router = require('express').Router({ mergeParams: true })
 const table = require('../Task/tableTask')
-const Task = require('..Task/classTask')
+const Task = require('../Task/classTask')
 
 router.get('/', async (req, res) => {
   const tasks = await table.list(req.Note.id)
@@ -72,4 +72,4 @@ router.put('/:id', async (req, res, next) => {
 
 })
 
-module.exports = router_task
+module.exports = router
