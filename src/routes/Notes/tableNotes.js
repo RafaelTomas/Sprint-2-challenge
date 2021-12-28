@@ -4,8 +4,8 @@ const NotFound = require('../../erro/NotFound')
 
 module.exports = {
     
-    insert (notes) {
-        return model.create(notes)
+    insert (Notes) {
+        return model.create(Notes)
     },
     
     remove(id){

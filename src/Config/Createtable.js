@@ -1,6 +1,6 @@
 const callmodels = [
-    require('../models/notes'),
-    require('../models/task')
+    require('../routes/Notes/notes'),
+    require('../routes/Task/task')
 ]
 
 async function createTable() {

@@ -1,5 +1,5 @@
 const express = require('express')
-require('./database')
+require('./src/database')
 const router = require('./routes/router')
 const NotFound = require('./erro/NotFound')
 const invalidField = require('./erro/invalidfield')
@@ -36,7 +36,7 @@ app.use((erro, req, res, next) => {
 
 
 //rotas
-app.use('/api/project', router)
+app.use('/api/notes', router)
 
 //porta para o server rodar
 let port = process.env.PORT || 3000
